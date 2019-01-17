@@ -111,6 +111,7 @@ def oracle(secretProgram, qr, cr, secret):
     secretProgram.x(qr[index])
 
 def guess(secret):
+  # Apply 4-bit Grover's search to identify a target array of bits amongst all combinations of bits in 1 program execution.
   # Create 2 qubits for the input array.
   qr = QuantumRegister(4)
   # Create 2 registers for the output.
@@ -179,6 +180,48 @@ def guess(secret):
   arrResultInt = [int(i) for i in arrResult]
   # Convert the result to an integer.
   return bitsToInt(arrResultInt)
+
+def miniGame():
+  print('An mischievous cloud blocks your way and challenges you to a game!')
+  print("If you can guess a magically mystical number before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
+
+  bonus = 0
+
+  # Read input.
+  command = input("Do you want to play his game? [yes,no]: ").lower()
+  if command[0] == 'y':
+    # Select a random number (returned as an array of bits).
+    print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A number has been chosen.")
+    secret = random(15)
+    secretInt = bitsToInt(secret)
+    print("Psst. The secret is " + str(secretInt))
+
+    # Begin the mini-game loop.
+    isGuessGameOver = False
+    while not isGuessGameOver:
+      # Let the player make a guess.
+      command = int(input("Guess a number between 0 and 15. [0-15]: "))
+      if command == secretInt:
+        print("You guessed correct!")
+        print("Altitude + 100")
+        bonus = 100
+        isGuessGameOver = True
+      else:
+        print("You guessed wrong.")
+
+      # Let the computer make a guess.
+      if not isGuessGameOver:
+        # The computer's guess is a binary number.
+        computerResult = guess(secret)
+
+        print("The mischievous cloud guesses " + str(computerResult) + '.')
+        if computerResult == secretInt:
+          print("Haha, I win, says the mischievous cloud!")
+          print("Altitude - 100")
+          bonus = -100
+          isGuessGameOver = True
+
+  return bonus
 
 run.isInit = False # Indicate that we need to initialize the IBM Q API in the run() method.
 isGameOver = False # Indicates when the game is complete.
@@ -251,47 +294,11 @@ while not isGameOver:
       print('Congratulations! ' + name + ' soars into the castle gates!')
       isGameOver = True
     elif altitude > 0:
-      #
-      n = randomInt(15)
-      if n > 10:
-        print('An mischievous cloud blocks your way and challenges you to a game!')
-        print("If you can guess a magically mystical number before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
-
-        # Read input.
-        command = input("Do you want to play his game? [yes,no]: ").lower()
-        if command[0] == 'y':
-          # Select a random number (returned as an array of bits).
-          print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A number has been chosen.")
-          secret = random(15)
-          secretInt = bitsToInt(secret)
-          print("Psst. The secret is " + str(secretInt))
-
-          # Begin the mini-game loop.
-          isGuessGameOver = False
-          while not isGuessGameOver:
-            # Let the player make a guess.
-            command = int(input("Guess a number between 0 and 15. [0-15]: "))
-            if command == secretInt:
-              print("You guessed correct!")
-              print("Altitude + 100")
-              altitude = altitude + 100
-              isGuessGameOver = True
-            else:
-              print("You guessed wrong.")
-
-            # Let the computer make a guess.
-            if not isGuessGameOver:
-              # The computer's guess is a binary number.
-              computerResult = guess(secret)
-
-              print("The mischievous cloud guesses " + str(computerResult) + '.')
-              if computerResult == secretInt:
-                print("Haha, I win, says the mischievous cloud!")
-                print("Altitude - 100")
-                altitude = altitude - 100
-                if altitude < 0:
-                  altitude = 0
-                isGuessGameOver = True
+      # Check if we should play a mini-game.
+      if randomInt(15) > 10:
+        # Play the mini-game and then apply a bonus or penalty to altitude.
+        altitude = altitude + miniGame()
+        altitude = altitude if altitude >= 0 else 0
 
     if not isGameOver and altitude >= goal:
       print('Congratulations! ' + name + ' soars into the castle gates!')
