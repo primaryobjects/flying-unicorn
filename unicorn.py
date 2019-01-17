@@ -7,8 +7,10 @@ import math
 import qiskit
 from qiskit import ClassicalRegister, QuantumRegister, QuantumCircuit
 from qiskit import IBMQ
+import numpy as np
+import operator
 from configparser import RawConfigParser
-from randomint import randomInt
+from randomint import random, randomInt, bitsToInt
 
 # Selects the environment to run the game on: simulator or real
 device = 'sim';
@@ -94,6 +96,90 @@ def action(command):
 
   return switcher.get(command, -1)
 
+def oracle(secretProgram, qr, cr, secret):
+  # Convert the list of 1's and 0's in secret into an array.
+  secret = np.asarray(secret)
+
+  # Find all bits with a value of 0.
+  indices = np.where(secret == 0)[0]
+
+  # Invert the bits associated with a value of 0.
+  for i in range(len(indices)):
+    # We want to read bits, starting with the right-most value as index 0.
+    index = int(len(secret) - 1 - indices[i])
+    # Invert the qubit.
+    secretProgram.x(qr[index])
+
+def guess(secret):
+  # Create 2 qubits for the input array.
+  qr = QuantumRegister(4)
+  # Create 2 registers for the output.
+  cr = ClassicalRegister(4)
+  guessProgram = QuantumCircuit(qr, cr)
+
+  # Place the qubits into superposition to represent all possible values.
+  guessProgram.h(qr)
+
+  # Run oracle on key. Invert the 0-value bits.
+  oracle(guessProgram, qr, cr, secret)
+
+  # Apply Grover's algorithm with a triple controlled Pauli Z-gate (cccZ).
+  guessProgram.cu1(np.pi / 4, qr[0], qr[3])
+  guessProgram.cx(qr[0], qr[1])
+  guessProgram.cu1(-np.pi / 4, qr[1], qr[3])
+  guessProgram.cx(qr[0], qr[1])
+  guessProgram.cu1(np.pi/4, qr[1], qr[3])
+  guessProgram.cx(qr[1], qr[2])
+  guessProgram.cu1(-np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[0], qr[2])
+  guessProgram.cu1(np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[1], qr[2])
+  guessProgram.cu1(-np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[0], qr[2])
+  guessProgram.cu1(np.pi/4, qr[2], qr[3])
+
+  # Reverse the inversions by the oracle.
+  oracle(guessProgram, qr, cr, secret)
+
+  # Amplification.
+  guessProgram.h(qr)
+  guessProgram.x(qr)
+
+  # Apply Grover's algorithm with a triple controlled Pauli Z-gate (cccZ).
+  guessProgram.cu1(np.pi/4, qr[0], qr[3])
+  guessProgram.cx(qr[0], qr[1])
+  guessProgram.cu1(-np.pi/4, qr[1], qr[3])
+  guessProgram.cx(qr[0], qr[1])
+  guessProgram.cu1(np.pi/4, qr[1], qr[3])
+  guessProgram.cx(qr[1], qr[2])
+  guessProgram.cu1(-np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[0], qr[2])
+  guessProgram.cu1(np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[1], qr[2])
+  guessProgram.cu1(-np.pi/4, qr[2], qr[3])
+  guessProgram.cx(qr[0], qr[2])
+  guessProgram.cu1(np.pi/4, qr[2], qr[3])
+
+  # Reverse the amplification.
+  guessProgram.x(qr)
+  guessProgram.h(qr)
+
+  # Measure the result.
+  guessProgram.barrier(qr)
+  guessProgram.measure(qr, cr)
+
+  # Obtain a measurement and check if it matches the password (without error).
+  results = run(guessProgram, device)
+  print(results)
+  answer = max(results.items(), key=operator.itemgetter(1))[0]
+
+  # Convert the binary number to an array of characters.
+  arrResult = list(answer)
+  # Convert the array of characters to an array of integers (1's and 0's).
+  arrResultInt = [int(i) for i in arrResult]
+  # Convert the result to an integer.
+  return bitsToInt(arrResultInt)
+
 run.isInit = False # Indicate that we need to initialize the IBM Q API in the run() method.
 isGameOver = False # Indicates when the game is complete.
 altitude = 0 # Current altitude of player. Once goal is reached, the game ends.
@@ -162,5 +248,51 @@ while not isGameOver:
 
     # Did the player reach the castle?
     if altitude >= goal:
+      print('Congratulations! ' + name + ' soars into the castle gates!')
+      isGameOver = True
+    elif altitude > 0:
+      #
+      n = randomInt(15)
+      if n > 10:
+        print('An mischievous cloud blocks your way and challenges you to a game!')
+        print("If you can guess a magically mystical number before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
+
+        # Read input.
+        command = input("Do you want to play his game? [yes,no]: ").lower()
+        if command[0] == 'y':
+          # Select a random number (returned as an array of bits).
+          print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A number has been chosen.")
+          secret = random(15)
+          secretInt = bitsToInt(secret)
+          print("Psst. The secret is " + str(secretInt))
+
+          # Begin the mini-game loop.
+          isGuessGameOver = False
+          while not isGuessGameOver:
+            # Let the player make a guess.
+            command = int(input("Guess a number between 0 and 15. [0-15]: "))
+            if command == secretInt:
+              print("You guessed correct!")
+              print("Altitude + 100")
+              altitude = altitude + 100
+              isGuessGameOver = True
+            else:
+              print("You guessed wrong.")
+
+            # Let the computer make a guess.
+            if not isGuessGameOver:
+              # The computer's guess is a binary number.
+              computerResult = guess(secret)
+
+              print("The mischievous cloud guesses " + str(computerResult) + '.')
+              if computerResult == secretInt:
+                print("Haha, I win, says the mischievous cloud!")
+                print("Altitude - 100")
+                altitude = altitude - 100
+                if altitude < 0:
+                  altitude = 0
+                isGuessGameOver = True
+
+    if not isGameOver and altitude >= goal:
       print('Congratulations! ' + name + ' soars into the castle gates!')
       isGameOver = True
