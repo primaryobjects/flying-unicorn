@@ -10,11 +10,12 @@ from qiskit import IBMQ
 import numpy as np
 import operator
 import time
+import ast
 from configparser import RawConfigParser
 from randomint import random, randomInt, bitsToInt
 
 # Selects the environment to run the game on: simulator or real
-device = 'sim';
+device = 'real';
 
 def run(program, type, shots = 100):
   if type == 'real':
@@ -22,7 +23,13 @@ def run(program, type, shots = 100):
         # Setup the API key for the real quantum computer.
         parser = RawConfigParser()
         parser.read('config.ini')
-        IBMQ.enable_account(parser.get('IBM', 'key'))
+
+        # Read
+        proxies = ast.literal_eval(parser.get('IBM', 'proxies')) if parser.has_option('IBM', 'proxies') else None
+        verify = (True if parser.get('IBM', 'verify') == 'True' else False) if parser.has_option('IBM', 'verify') else True
+        token = parser.get('IBM', 'key')
+
+        IBMQ.enable_account(token = token, proxies = proxies, verify = verify)
         run.isInit = True
 
     # Set the backend server.
@@ -34,7 +41,7 @@ def run(program, type, shots = 100):
     job = qiskit.execute(program, backend)
     result = job.result().get_counts()
     stop = time.time()
-    print("Request completed in " + str(round((stop - start) % 60, 2)) + "s")
+    print("Request completed in " + str(round((stop - start) / 60, 2)) + "m " + str(round((stop - start) % 60, 2)) + "s")
     return result
   else:
     # Execute the program in the simulator.
@@ -43,7 +50,7 @@ def run(program, type, shots = 100):
     job = qiskit.execute(program, qiskit.Aer.get_backend('qasm_simulator'), shots=shots)
     result = job.result().get_counts()
     stop = time.time()
-    print("Request completed in " + str(round((stop - start) % 60, 2)) + "s")
+    print("Request completed in " + str(round((stop - start) / 60, 2)) + "m " + str(round((stop - start) % 60, 2)) + "s")
     return result
 def getName(index):
   names = {
