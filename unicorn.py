@@ -9,6 +9,7 @@ from qiskit import ClassicalRegister, QuantumRegister, QuantumCircuit
 from qiskit import IBMQ
 import numpy as np
 import operator
+import time
 from configparser import RawConfigParser
 from randomint import random, randomInt, bitsToInt
 
@@ -29,14 +30,21 @@ def run(program, type, shots = 100):
 
     # Execute the program on the quantum machine.
     print("Running on", backend.name())
+    start = time.time()
     job = qiskit.execute(program, backend)
-    return job.result().get_counts()
+    result = job.result().get_counts()
+    stop = time.time()
+    print("Request completed in " + str(round((stop - start) % 60, 2)) + "s")
+    return result
   else:
     # Execute the program in the simulator.
     print("Running on the simulator.")
+    start = time.time()
     job = qiskit.execute(program, qiskit.Aer.get_backend('qasm_simulator'), shots=shots)
-    return job.result().get_counts()
-
+    result = job.result().get_counts()
+    stop = time.time()
+    print("Request completed in " + str(round((stop - start) % 60, 2)) + "s")
+    return result
 def getName(index):
   names = {
     1: 'Golden',
@@ -228,6 +236,7 @@ isGameOver = False # Indicates when the game is complete.
 altitude = 0 # Current altitude of player. Once goal is reached, the game ends.
 goal = 1000 # Max altitude for the player to reach to end the game.
 shots = goal + (125 if device == 'real' else 0) # Number of measurements on the quantum machine; when shots == goal, the player reached the goal; we include a buffer on physical quantum computers to account for natural error.
+turns = 0 # Total count of turns in the game.
 
 # Generate a random name using a quantum random number generator.
 name = getName(randomInt(15)) + ' ' + getName(randomInt(15))
@@ -269,6 +278,8 @@ while not isGameOver:
       else:
         print("Your unicorn can't fly into the ground!")
 
+    turns = turns + 1
+
     # Calculate the amount of NOT to apply to the qubit, based on the percent of the new altitude from the goal.
     frac = (altitude + modifier) / goal
     if frac >= 1:
@@ -303,3 +314,5 @@ while not isGameOver:
     if not isGameOver and altitude >= goal:
       print('Congratulations! ' + name + ' soars into the castle gates!')
       isGameOver = True
+
+print("The game ended in " + str(turns) + " rounds. Great job!")
