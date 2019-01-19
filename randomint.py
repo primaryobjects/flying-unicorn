@@ -23,7 +23,13 @@ def run(program, type, shots = 1, silent = False):
     # Setup the API key for the real quantum computer.
     parser = RawConfigParser()
     parser.read('config.ini')
-    IBMQ.enable_account(parser.get('IBM', 'key'))
+
+    # Read configuration values.
+    proxies = ast.literal_eval(parser.get('IBM', 'proxies')) if parser.has_option('IBM', 'proxies') else None
+    verify = (True if parser.get('IBM', 'verify') == 'True' else False) if parser.has_option('IBM', 'verify') else True
+    token = parser.get('IBM', 'key')
+
+    IBMQ.enable_account(token = token, proxies = proxies, verify = verify)
     run.isInit = True
 
     # Set the backend server.
