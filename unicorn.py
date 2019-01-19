@@ -215,7 +215,7 @@ def miniGame():
     isGuessGameOver = False
     while not isGuessGameOver:
       # Let the player make a guess.
-      command = int(input("Guess a number between 0 and 15. [0-15]: "))
+      command = int(input("Guess a number between 1 and 14. [1-14]: "))
       if command == secretInt:
         print("You guessed correct!")
         print("Altitude + 100")
