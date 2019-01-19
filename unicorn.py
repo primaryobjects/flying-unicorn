@@ -15,7 +15,7 @@ from configparser import RawConfigParser
 from randomint import random, randomInt, bitsToInt
 
 # Selects the environment to run the game on: simulator or real
-device = 'real';
+device = 'sim';
 
 def run(program, type, shots = 100):
   if type == 'real':
@@ -196,8 +196,8 @@ def guess(secret):
   # Convert the result to an integer.
   return bitsToInt(arrResultInt)
 
-def miniGame():
-  print('An mischievous cloud blocks your way and challenges you to a game!')
+def miniGame(altitude):
+  print("\n=====================\n-[ Altitude " + str(altitude) + " feet ]-\nA mischievous cloud blocks your way and challenges you to a game!")
   print("If you can guess a magically mystical number before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
 
   bonus = 0
@@ -207,15 +207,30 @@ def miniGame():
   if command[0] == 'y':
     # Select a random number (returned as an array of bits).
     print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A number has been chosen.")
-    secret = random(15)
+    secret = random(15) # 1-14
     secretInt = bitsToInt(secret)
+    low = 1
+    high = 14
     print("Psst. The secret is " + str(secretInt))
+
+    # Give the player a chance against the quantum algorithm.
+    if secretInt < 5:
+      low = 1
+      high = 4
+    elif secretInt < 10:
+      low = 5
+      high = 9
+    else:
+      low = 10
+      high = 14
 
     # Begin the mini-game loop.
     isGuessGameOver = False
+    round = 0
     while not isGuessGameOver:
       # Let the player make a guess.
-      command = int(input("Guess a number between 1 and 14. [1-14]: "))
+      round = round + 1
+      command = int(input("Round " + str(round) + ". Guess a number between " + str(low) + " and " + str(high) + ": "))
       if command == secretInt:
         print("You guessed correct!")
         print("Altitude + 100")
@@ -236,7 +251,8 @@ def miniGame():
           bonus = -100
           isGuessGameOver = True
 
-  return bonus
+  # Return the new altitude + bonus (or penalty).
+  return (altitude + bonus) if (altitude + bonus) >= 0 else 0
 
 run.isInit = False # Indicate that we need to initialize the IBM Q API in the run() method.
 isGameOver = False # Indicates when the game is complete.
@@ -315,11 +331,10 @@ while not isGameOver:
       # Check if we should play a mini-game.
       if randomInt(15) > 10:
         # Play the mini-game and then apply a bonus or penalty to altitude.
-        altitude = altitude + miniGame()
-        altitude = altitude if altitude >= 0 else 0
+        altitude = miniGame(altitude)
 
     if not isGameOver and altitude >= goal:
       print('Congratulations! ' + name + ' soars into the castle gates!')
       isGameOver = True
 
-print("The game ended in " + str(turns) + " rounds. Great job!")
+print("The game ended in " + str(turns) + " rounds. " + ("You won, great job! :)" if altitude >= goal else "Better luck next time. :("))
