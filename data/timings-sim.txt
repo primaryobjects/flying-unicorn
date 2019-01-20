@@ -1,0 +1,1345 @@
+/mnt/c/Projects$ cd quantum/
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[A
+The oracle password is 0010.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0010': 1}
+The quantum computer guesses
+0010
+Solved 0010 in 2 measurements.
+^[[A
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0111.
+Running on simulator.
+^[[A
+Request completed in 0.0m 0.18s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0111': 1}
+The quantum computer guesses
+0111
+Solved 0111 in 4 measurements.
+^[[A
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.25s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[A
+The oracle password is 1001.
+Running on simulator.
+^[[ARequest completed in 0.0m 0.18s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+
+Request completed in 0.0m 0.07s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1001': 1}
+The quantum computer guesses
+1001
+Solved 1001 in 4 measurements.
+^[[A/mnt/c/Projects/quantum$ python3 search.py
+
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[AThe oracle password is 1111.
+Running on simulator.
+
+Request completed in 0.0m 0.18s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 1 measurements.
+^[[A/mnt/c/Projects/quantum$ python3 search.py
+
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1101.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1100': 1}
+The quantum computer guesses
+1100
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1101': 1}
+The quantum computer guesses
+1101
+Solved 1101 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1101.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1101': 1}
+The quantum computer guesses
+1101
+Solved 1101 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1111.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0001.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0101': 1}
+The quantum computer guesses
+0101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0010': 1}
+The quantum computer guesses
+0010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0001': 1}
+The quantum computer guesses
+0001
+Solved 0001 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0011.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0011': 1}
+The quantum computer guesses
+0011
+Solved 0011 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0001.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0001': 1}
+The quantum computer guesses
+0001
+Solved 0001 in 2 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0001.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0001': 1}
+The quantum computer guesses
+0001
+Solved 0001 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1010.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Solved 1010 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0101.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0101': 1}
+The quantum computer guesses
+0101
+Solved 0101 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1101.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1101': 1}
+The quantum computer guesses
+1101
+Solved 1101 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0110': 1}
+The quantum computer guesses
+0110
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1100': 1}
+The quantum computer guesses
+1100
+Running on simulator.
+Request completed in 0.0m 0.06s
+{'0100': 1}
+The quantum computer guesses
+0100
+Solved 0100 in 5 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0001': 1}
+The quantum computer guesses
+0001
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1000.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[A
+The oracle password is 0010.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+^[[ARequest completed in 0.0m 0.08s
+{'0010': 1}
+The quantum computer guesses
+0010
+Solved 0010 in 2 measurements.
+
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+^[[AThe oracle password is 1010.
+Running on simulator.
+
+Request completed in 0.0m 0.19s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+^[[ARequest completed in 0.0m 0.07s
+{'1010': 1}
+The quantum computer guesses
+1010
+Solved 1010 in 3 measurements.
+
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[AThe oracle password is 1000.
+Running on simulator.
+
+^[[ARequest completed in 0.0m 0.18s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 1 measurements.
+
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+The oracle password is 1110.
+Running on simulator.
+^[[A
+Request completed in 0.0m 0.18s
+{'0001': 1}
+The quantum computer guesses
+0001
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1110': 1}
+The quantum computer guesses
+1110
+Solved 1110 in 2 measurements.
+^[[A/mnt/c/Projects/quantum$ python3 search.py
+
+^[[A
+^[[A
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+^[[AThe oracle password is 1101.
+Running on simulator.
+
+Request completed in 0.0m 0.18s
+{'1101': 1}
+The quantum computer guesses
+1101
+Solved 1101 in 1 measurements.
+^[[A/mnt/c/Projects/quantum$ python3 search.py
+
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[A
+The oracle password is 0000.
+Running on simulator.
+^[[ARequest completed in 0.0m 0.17s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+^[[AThe oracle password is 0110.
+Running on simulator.
+
+Request completed in 0.0m 0.18s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+The oracle password is 0000.
+Running on simulator.
+^[[A
+Request completed in 0.0m 0.18s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+^[[A/mnt/c/Projects/quantum$ python3 search.py
+
+^[[A
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[A
+The oracle password is 0100.
+Running on simulator.
+^[[ARequest completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+
+Request completed in 0.0m 0.07s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+^[[ARequest completed in 0.0m 0.07s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0001': 1}
+The quantum computer guesses
+0001
+Running on simulator.
+
+Request completed in 0.0m 0.07s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0100': 1}
+The quantum computer guesses
+0100
+Solved 0100 in 7 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0111.
+Running on simulator.
+
+Request completed in 0.0m 0.19s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+^[[ARequest completed in 0.0m 0.07s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0010': 1}
+The quantum computer guesses
+0010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+
+Request completed in 0.0m 0.06s
+{'0111': 1}
+The quantum computer guesses
+0111
+Solved 0111 in 5 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+^[[AThe oracle password is 1001.
+Running on simulator.
+
+Request completed in 0.0m 0.18s
+{'1001': 1}
+The quantum computer guesses
+1001
+Solved 1001 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+^[[A
+^[[A
+^[[A/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+
+The oracle password is 1010.
+Running on simulator.
+^[[ARequest completed in 0.0m 0.18s
+{'1010': 1}
+The quantum computer guesses
+1010
+Solved 1010 in 1 measurements.
+
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1000.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1001.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1001': 1}
+The quantum computer guesses
+1001
+Solved 1001 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1111.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0010': 1}
+The quantum computer guesses
+0010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.25s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.15s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 2 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.21s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0111.
+Running on simulator.
+Request completed in 0.0m 0.21s
+{'0111': 1}
+The quantum computer guesses
+0111
+Solved 0111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1010.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Solved 1010 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1000.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.09s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 2 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 2 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1111.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0111.
+Running on simulator.
+Request completed in 0.0m 0.18s
+{'0111': 1}
+The quantum computer guesses
+0111
+Solved 0111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0010': 1}
+The quantum computer guesses
+0010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1111.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0001': 1}
+The quantum computer guesses
+0001
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1001': 1}
+The quantum computer guesses
+1001
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1001': 1}
+The quantum computer guesses
+1001
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+Request completed in 0.0m 0.11s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 9 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1010.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Solved 1010 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0011.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1100': 1}
+The quantum computer guesses
+1100
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0011': 1}
+The quantum computer guesses
+0011
+Solved 0011 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0101.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.09s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0101': 1}
+The quantum computer guesses
+0101
+Solved 0101 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0011': 1}
+The quantum computer guesses
+0011
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.12s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 8 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0011.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1111': 1}
+The quantum computer guesses
+1111
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'0011': 1}
+The quantum computer guesses
+0011
+Solved 0011 in 5 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1000.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1101.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1101': 1}
+The quantum computer guesses
+1101
+Solved 1101 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0001.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1101': 1}
+The quantum computer guesses
+1101
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0001': 1}
+The quantum computer guesses
+0001
+Solved 0001 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0111.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1110': 1}
+The quantum computer guesses
+1110
+Running on simulator.
+Request completed in 0.0m 0.1s
+{'0111': 1}
+The quantum computer guesses
+0111
+Solved 0111 in 2 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1011.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0101': 1}
+The quantum computer guesses
+0101
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+Request completed in 0.0m 0.09s
+{'1100': 1}
+The quantum computer guesses
+1100
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1011': 1}
+The quantum computer guesses
+1011
+Solved 1011 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0001.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0001': 1}
+The quantum computer guesses
+0001
+Solved 0001 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0010.
+Running on simulator.
+Request completed in 0.0m 0.24s
+{'0010': 1}
+The quantum computer guesses
+0010
+Solved 0010 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0100': 1}
+The quantum computer guesses
+0100
+Running on simulator.
+Request completed in 0.0m 0.15s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.09s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0110.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'0110': 1}
+The quantum computer guesses
+0110
+Solved 0110 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0011.
+Running on simulator.
+Request completed in 0.0m 0.22s
+{'0101': 1}
+The quantum computer guesses
+0101
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.09s
+{'0011': 1}
+The quantum computer guesses
+0011
+Solved 0011 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1010': 1}
+The quantum computer guesses
+1010
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0111': 1}
+The quantum computer guesses
+0111
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0101.
+Running on simulator.
+Request completed in 0.0m 0.21s
+{'0101': 1}
+The quantum computer guesses
+0101
+Solved 0101 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1111.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1111': 1}
+The quantum computer guesses
+1111
+Solved 1111 in 1 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 0000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1000': 1}
+The quantum computer guesses
+1000
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'1001': 1}
+The quantum computer guesses
+1001
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Solved 0000 in 3 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1000.
+Running on simulator.
+Request completed in 0.0m 0.19s
+{'1011': 1}
+The quantum computer guesses
+1011
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0001': 1}
+The quantum computer guesses
+0001
+Running on simulator.
+Request completed in 0.0m 0.08s
+{'0000': 1}
+The quantum computer guesses
+0000
+Running on simulator.
+Request completed in 0.0m 0.07s
+{'1000': 1}
+The quantum computer guesses
+1000
+Solved 1000 in 4 measurements.
+/mnt/c/Projects/quantum$ python3 search.py
+/home/username/.local/lib/python3.5/site-packages/marshmallow/schema.py:364: ChangedInMarshmallow3Warning: strict=False is not recommended. In marshmallow 3.0, schemas will always be strict. See https://marshmallow.readthedocs.io/en/latest/upgrading.html#schemas-are-always-strict
+  ChangedInMarshmallow3Warning
+The oracle password is 1100.
+Running on simulator.
+Request completed in 0.0m 0.2s
+{'1100': 1}
+The quantum computer guesses
+1100
+Solved 1100 in 1 measurements.
+/mnt/c/Projects/quantum$
