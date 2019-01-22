@@ -52,6 +52,7 @@ def run(program, type, shots = 100):
     stop = time.time()
     print("Request completed in " + str(round((stop - start) / 60, 2)) + "m " + str(round((stop - start) % 60, 2)) + "s")
     return result
+
 def getName(index):
   names = {
     1: 'Golden',
@@ -69,6 +70,16 @@ def getName(index):
     13: 'Dark',
     14: 'Light',
     15: 'Crimson'
+  }
+
+  return names.get(index, 'Mystery')
+
+def getJewel(index):
+  names = {
+    1: 'amethyst',
+    2: 'sapphire',
+    3: 'emerald',
+    4: 'jade',
   }
 
   return names.get(index, 'Mystery')
@@ -197,8 +208,8 @@ def guess(secret):
   return bitsToInt(arrResultInt)
 
 def miniGame(altitude):
-  print("\n=====================\n-[ Altitude " + str(altitude) + " feet ]-\nA mischievous cloud blocks your way and challenges you to a game!")
-  print("If you can guess a magically mystical number before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
+  print("\n=====================\n-[ Altitude " + str(altitude) + " feet ]-\nA mischievous quantum cloud blocks your way and challenges you to a game!")
+  print("He has stolen a magical unicorn jewel from the castle!\nIf you can guess which jewel is the real one before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
 
   bonus = 0
 
@@ -206,22 +217,25 @@ def miniGame(altitude):
   command = input("Do you want to play his game? [yes,no]: ").lower()
   if command[0] == 'y':
     # Select a random number (returned as an array of bits).
-    print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A number has been chosen.")
+    print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A unicorn jewel has been chosen.")
     secret = random(15) # 1-14
     secretInt = bitsToInt(secret)
     low = 1
     high = 14
     print("Psst. The secret is " + str(secretInt))
 
-    # Give the player a chance against the quantum algorithm.
+    # Give the player a chance against the quantum algorithm by breaking the guesses into ranges of 4 choices (25% chance).
     if secretInt < 5:
       low = 1
       high = 4
-    elif secretInt < 10:
+    elif secretInt < 9:
       low = 5
-      high = 9
+      high = 8
+    elif secretInt < 13:
+      low = 9
+      high = 12
     else:
-      low = 10
+      low = 13
       high = 14
 
     # Begin the mini-game loop.
@@ -230,8 +244,20 @@ def miniGame(altitude):
     while not isGuessGameOver:
       # Let the player make a guess.
       round = round + 1
-      command = int(input("Round " + str(round) + ". Guess a number between " + str(low) + " and " + str(high) + ": "))
-      if command == secretInt:
+      jewels = []
+      for i in range(high - low + 1):
+        jewels.append(getJewel(i + 1))
+
+      # Select a jewel.
+      command = ''
+      while not command.lower() in jewels:
+        command = input("Round " + str(round) + ". Which unicorn jewel is the real one? [" + ','.join(jewels) + "]: ").lower()
+
+      # Make the selected index 1-based to match our secret number and be within the selected range.
+      index = low + jewels.index(command) if command in jewels else -1
+
+      # Check if the player guesses the correct number.
+      if index == secretInt:
         print("You guessed correct!")
         print("Altitude + 100")
         bonus = 100
@@ -241,12 +267,15 @@ def miniGame(altitude):
 
       # Let the computer make a guess.
       if not isGuessGameOver:
-        # The computer's guess is a binary number.
+        # The computer's guess is a binary number from the total 1-14 range. Thew quantum player doesn't need an advantage of range to make it easier!
         computerResult = guess(secret)
 
-        print("The mischievous cloud guesses " + str(computerResult) + '.')
+        # Convert the search result index into a jewel name within the selected range.
+        computerJewelIndex = computerResult - low + 1
+
+        print("The mischievous cloud guesses " + getJewel(computerJewelIndex) + '.')
         if computerResult == secretInt:
-          print("Haha, I win, says the mischievous cloud!")
+          print("Haha, I win, says the mischievous cloud!\nDon't say I didn't warn you! After all, I live in the quantum world! =)")
           print("Altitude - 100")
           bonus = -100
           isGuessGameOver = True
