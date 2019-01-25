@@ -142,6 +142,10 @@ Congratulations! Twilight Bow soars into the castle gates!
 The game ended in 10 rounds. You won, great job! :)
 ```
 
+## Timing Metrics
+
+Timing metrics for programs executed on the QisKit simulator versus IBM Q Experience can be found in the [data](data) folder.
+
 Author
 ----
 Kory Becker
