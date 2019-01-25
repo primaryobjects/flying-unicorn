@@ -58,3 +58,6 @@ summary <- data.frame(
   max=c(max(dataSim$total), max(ibmq[[1]]$total), max(ibmq[[2]]$total), max(data$total))
 )
 print(summary)
+
+# Plot the mean execution time metrics for each platform.
+barplot(summary$mean, names.arg=summary$type, main='Mean Quantum Computing Execution Times (s)')

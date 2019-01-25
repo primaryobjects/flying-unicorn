@@ -24,6 +24,8 @@ Machines include ibmqx4, ibmq_16_melbourne, and the QisKit simulator.
 4  IBM Q Experience  127 53.81  79.8416535 627.30
 ```
 
+![Mean Quantum Computing Execution Times in seconds](metrics.png)
+
 ## Conclusion
 
 The results record significant wait times for programs executed on IBM Q Experience versus the simulator.
