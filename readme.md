@@ -159,6 +159,8 @@ Machines include ibmqx4, ibmq_16_melbourne, and the QisKit simulator.
 
 ## Results
 
+A summary of the timing metrics for executing a quantum program on the QisKit simulator versus IBM Q Experience is shown below.
+
 ![Mean Quantum Computing Execution Times in seconds](data/metrics.png)
 
 ```text
