@@ -122,7 +122,7 @@ def action(command):
 
   return switcher.get(command, -1)
 
-def oracle(secretProgram, qr, cr, secret):
+def oracle(secretProgram, qr, secret):
   # Convert the list of 1's and 0's in secret into an array.
   secret = np.asarray(secret)
 
@@ -148,7 +148,7 @@ def guess(secret):
   guessProgram.h(qr)
 
   # Run oracle on key. Invert the 0-value bits.
-  oracle(guessProgram, qr, cr, secret)
+  oracle(guessProgram, qr, secret)
 
   # Apply Grover's algorithm with a triple controlled Pauli Z-gate (cccZ).
   guessProgram.cu1(np.pi / 4, qr[0], qr[3])
@@ -166,7 +166,7 @@ def guess(secret):
   guessProgram.cu1(np.pi/4, qr[2], qr[3])
 
   # Reverse the inversions by the oracle.
-  oracle(guessProgram, qr, cr, secret)
+  oracle(guessProgram, qr, secret)
 
   # Amplification.
   guessProgram.h(qr)
@@ -286,8 +286,9 @@ def miniGame(altitude):
 run.isInit = False # Indicate that we need to initialize the IBM Q API in the run() method.
 isGameOver = False # Indicates when the game is complete.
 altitude = 0 # Current altitude of player. Once goal is reached, the game ends.
-goal = 1000 # Max altitude for the player to reach to end the game.
-shots = goal + (125 if device == 'real' else 0) # Number of measurements on the quantum machine; when shots == goal, the player reached the goal; we include a buffer on physical quantum computers to account for natural error.
+errorBuffer = (75 if device == 'real' else 0) # Amount to add to measurements on real quantum computer to account for error rate, otherwise player can never reach goal due to measurement error even at 100% invert of qubit.
+goal = 1024 - errorBuffer # Max altitude for the player to reach to end the game.
+shots = goal + errorBuffer # Number of measurements on the quantum machine; when shots == goal, the player reached the goal; we include a buffer on physical quantum computers to account for natural error.
 turns = 0 # Total count of turns in the game.
 
 # Generate a random name using a quantum random number generator.
