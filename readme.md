@@ -1,5 +1,5 @@
-Fly Unicorn
-===========
+Flying Unicorn
+==============
 
 Fly your magical unicorn up into the sky and reach the castle gates!
 
@@ -8,9 +8,9 @@ A game developed for a quantum computer, utilizing the properties of superpositi
 ## Gameplay
 
 ```text
-===============
-  Fly Unicorn
-===============
+================
+ Flying Unicorn
+================
 
 Your majestic unicorn, Twilight Bow, is ready for flight!
 After a long night of preparation and celebration, it's time to visit the castle in the clouds.

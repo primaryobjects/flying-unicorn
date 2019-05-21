@@ -1,5 +1,5 @@
 #
-# Fly Unicorn
+# Flying Unicorn
 # A simple quantum game where the player has to fly a unicorn to the castle.
 #
 
@@ -294,9 +294,9 @@ turns = 0 # Total count of turns in the game.
 # Generate a random name using a quantum random number generator.
 name = getName(randomInt(15)) + ' ' + getName(randomInt(15))
 
-print('===============')
-print('  Fly Unicorn')
-print('===============')
+print('================')
+print(' Flying Unicorn')
+print('================')
 print('')
 print('Your majestic unicorn, ' + name + ', is ready for flight!')
 print('After a long night of preparation and celebration, it\'s time to visit the castle in the clouds.')
