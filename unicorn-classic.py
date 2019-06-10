@@ -186,9 +186,6 @@ print('')
 
 # Begin main game loop.
 while not isGameOver:
-  # Setup a variable to represent the unicorn.
-  unicorn = 0
-
   # Get input from the user.
   command = ''
   while not command.lower() in ['u', 'd', 'q', 'up', 'down', 'quit']:
@@ -212,23 +209,8 @@ while not isGameOver:
 
     turns = turns + 1
 
-    unicorn
-    # Calculate the amount of NOT to apply to the qubit, based on the percent of the new altitude from the goal.
-    frac = (altitude + modifier) / goal
-    if frac >= 1:
-      # The unicorn is at or beyond the goal, so just invert the 0-qubit to a 1-qubit for 100% of goal.
-      # Note: On a real quantum machine the error rate is likely to cause NOT(0) to not go all the way to 1, staying around 1=862 and 0=138, etc.
-      unicorn = 1
-    elif frac > 0:
-      # Apply a percentage of the distance of the unicorn to the goal (0-1), cooresponding to how high the unicorn is.
-      unicorn = frac * math.pi
-
-    # Execute on quantum machine.
-    counts = random.randint(50, 151) # 50-150
-    print(counts)
-
-    # Set the altitude based upon the number of 1 counts in the result.
-    altitude = counts
+    # Move the player with some randomness.
+    altitude = altitude + modifier + random.randint(1, 50) # 1-50
 
     # Did the player reach the castle?
     if altitude >= goal:
@@ -239,6 +221,8 @@ while not isGameOver:
       if random.randint(1, 16) > 10:
         # Play the mini-game and then apply a bonus or penalty to altitude.
         altitude = miniGame(altitude)
+    else:
+      altitude = 0
 
     if not isGameOver and altitude >= goal:
       print('Congratulations! ' + name + ' soars into the castle gates!')
