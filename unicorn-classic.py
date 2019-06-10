@@ -76,10 +76,6 @@ def action(command):
 
   return switcher.get(command, -1)
 
-def bound(value, low, high):
-   diff = high - low
-   return (value % diff + diff) % diff
-
 def miniGame(altitude):
   print("\n=====================\n-[ Altitude " + str(altitude) + " feet ]-\nA mischievous quantum cloud blocks your way and challenges you to a game!")
   print("He has stolen a magical unicorn jewel from the castle!\nIf you can guess which jewel is the real one before the cloud, you'll be rewarded.\nIf you lose, you'll face a penalty.")
