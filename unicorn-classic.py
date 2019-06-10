@@ -39,7 +39,11 @@ def getJewel(index):
     7: 'diamond',
     8: 'garnet',
     9: 'pearl',
-    10: 'opal'
+    10: 'opal',
+    11: 'amber',
+    12: 'citrine',
+    13: 'moonstone',
+    14: 'quartz'
   }
 
   return names.get(index, 'Mystery')
@@ -93,7 +97,7 @@ def miniGame(altitude):
   if command[0] == 'y':
     # Select a random number (returned as an array of bits).
     print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A unicorn jewel has been chosen.")
-    secret = random.randint(1, 10) # 1-10
+    secret = random.randint(1, 14) # 1-14
 
     # Begin the mini-game loop.
     isGuessGameOver = False
@@ -106,7 +110,7 @@ def miniGame(altitude):
       # Let the player make a guess.
       round = round + 1
       jewels = []
-      for i in range(10):
+      for i in range(14):
         jewels.append(getJewel(i + 1))
 
       # Select a jewel.
@@ -130,12 +134,12 @@ def miniGame(altitude):
 
       # Let the computer make a guess.
       if not isGuessGameOver:
-        # The computer's guess is a number from 1-10.
-        computerResult = random.randint(1, 10)
+        # The computer's guess is a number from 1-14.
+        computerResult = random.randint(1, 14)
 
         # Make sure this guess hasn't been tried yet.
         while computerResult in memory.keys():
-          computerResult = random.randint(1, 10)
+          computerResult = random.randint(1, 14)
 
         print("The mischievous cloud guesses " + getJewel(computerResult) + '.')
         if computerResult == secret:
