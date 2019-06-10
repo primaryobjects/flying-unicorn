@@ -76,9 +76,6 @@ def action(command):
 
   return switcher.get(command, -1)
 
-def guess():
-  return random.randint(1, 14)
-
 def bound(value, low, high):
    diff = high - low
    return (value % diff + diff) % diff
@@ -94,25 +91,7 @@ def miniGame(altitude):
   if command[0] == 'y':
     # Select a random number (returned as an array of bits).
     print("The mischievous cloud blinks his eyes. You hear a crack of thunder. A unicorn jewel has been chosen.")
-    secret = random.randint(1, 14) # 1-14
-    secretInt = secret
-    low = 1
-    high = 14
-    print("Psst. The secret is " + str(secretInt))
-
-    # Give the player a chance against the quantum algorithm by breaking the guesses into ranges of 4 choices (25% chance).
-    if secretInt < 5:
-      low = 1
-      high = 4
-    elif secretInt < 9:
-      low = 5
-      high = 8
-    elif secretInt < 13:
-      low = 9
-      high = 12
-    else:
-      low = 13
-      high = 14
+    secret = random.randint(1, 4) # 1-4
 
     # Begin the mini-game loop.
     isGuessGameOver = False
@@ -121,7 +100,7 @@ def miniGame(altitude):
       # Let the player make a guess.
       round = round + 1
       jewels = []
-      for i in range(high - low + 1):
+      for i in range(4):
         jewels.append(getJewel(i + 1))
 
       # Select a jewel.
@@ -130,10 +109,13 @@ def miniGame(altitude):
         command = input("Round " + str(round) + ". Which unicorn jewel is the real one? [" + ','.join(jewels) + "]: ").lower()
 
       # Make the selected index 1-based to match our secret number and be within the selected range.
-      index = low + jewels.index(command) if command in jewels else -1
+      index = jewels.index(command) + 1 if command in jewels else -1
+
+      print(secret);
+      print(index);
 
       # Check if the player guesses the correct number.
-      if index == secretInt:
+      if index == secret:
         print("You guessed correct!")
         print("Altitude + 100")
         bonus = 100
@@ -143,22 +125,11 @@ def miniGame(altitude):
 
       # Let the computer make a guess.
       if not isGuessGameOver:
-        # The computer's guess is a number from 1-14.
-        computerResult = guess()
+        # The computer's guess is a number from 1-4.
+        computerResult = random.randint(1, 4)
 
-        # Bound the result to the range of possible jewels (i.e., 1-4).
-        computerJewelIndex = bound(computerResult, low, high + 1)
-        if computerJewelIndex == 0:
-          computerJewelIndex = 4
-
-        # Get the matching jewel name.
-        jewelName = getJewel(computerJewelIndex)
-
-        # Finally, get the index of the matching jewel within range and use this as the computer's guess within range.
-        computerResult = low + jewels.index(jewelName)
-
-        print("The mischievous cloud guesses " + getJewel(computerJewelIndex) + '.')
-        if computerResult == secretInt:
+        print("The mischievous cloud guesses " + getJewel(computerResult) + '.')
+        if computerResult == secret:
           print("Haha, I win, says the mischievous cloud!\nDon't say I didn't warn you!")
           print("Altitude - 100")
           bonus = -100
@@ -218,7 +189,7 @@ while not isGameOver:
       isGameOver = True
     elif altitude > 0:
       # Check if we should play a mini-game.
-      if random.randint(1, 16) > 10:
+      if random.randint(1, 16) > 12:
         # Play the mini-game and then apply a bonus or penalty to altitude.
         altitude = miniGame(altitude)
     else:
