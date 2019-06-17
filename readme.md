@@ -3,7 +3,13 @@ Flying Unicorn
 
 Fly your magical unicorn up into the sky and reach the castle gates!
 
-A game developed for a quantum computer, utilizing the properties of superposition and uncertainty.
+Flying Unicorn is a game developed for a quantum computer, using the [QisKit](https://qiskit.org/) quantum programming framework. The game is designed to exlore the properties of superposition and uncertainty.
+
+The game is played in a text-based UI, where the player chooses an action to fly up or down at each turn. The amount of altitude at each turn is randomly determined, based upon a quantum bit (qubit). Additionally, a randomly occurring mini-game where the player has to guess a secret unicorn jewel from a large collection, uses an implementation of [Grover's search](https://en.wikipedia.org/wiki/Grover%27s_algorithm), a quantum algorithm that can find a key within a list of elements faster than any classical algorithm (O(sqrt(n)) versus O(n)).
+
+For comparison, a classical (non-quantum) version of the game is also available for play at the link below.
+
+[Play Flying Unicorn](https://repl.it/repls/SillyCrazyGlitch)
 
 ## Gameplay
 
