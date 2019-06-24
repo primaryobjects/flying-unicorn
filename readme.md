@@ -11,9 +11,9 @@ For comparison, a classical (non-quantum) version of the game is also available 
 
 [Play Flying Unicorn](https://repl.it/repls/SillyCrazyGlitch)
 
-[An Introduction to Quantum Computing](http://www.primaryobjects.com/2019/01/07/an-introduction-to-quantum-computing/)
-
 [Flying Unicorn: Developing a Game for a Quantum Computer](http://www.primaryobjects.com/Flying_Unicorn__Developing_a_Game_for_a_Quantum_Computer.pdf)
+
+[An Introduction to Quantum Computing](http://www.primaryobjects.com/2019/01/07/an-introduction-to-quantum-computing/)
 
 ## Gameplay
 
