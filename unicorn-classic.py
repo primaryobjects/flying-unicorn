@@ -159,7 +159,7 @@ altitude = 0 # Current altitude of player. Once goal is reached, the game ends.
 goal = 1024 # Max altitude for the player to reach to end the game.
 turns = 0 # Total count of turns in the game.
 
-# Generate a random name using a quantum random number generator.
+# Generate a random name using a random number generator.
 name = getName(random.randint(1, 16)) + ' ' + getName(random.randint(1, 16))
 
 print('================')
