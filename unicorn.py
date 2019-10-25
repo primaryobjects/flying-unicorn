@@ -15,7 +15,7 @@ from configparser import RawConfigParser
 from randomint import random, randomInt, bitsToInt
 
 # Selects the environment to run the game on: simulator or real
-device = 'real';
+device = 'sim';
 
 def run(program, type, shots = 100):
   if type == 'real':
