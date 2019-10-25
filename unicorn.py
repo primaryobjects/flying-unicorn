@@ -15,7 +15,7 @@ from configparser import RawConfigParser
 from randomint import random, randomInt, bitsToInt
 
 # Selects the environment to run the game on: simulator or real
-device = 'sim';
+device = 'real';
 
 def run(program, type, shots = 100):
   if type == 'real':
@@ -33,7 +33,9 @@ def run(program, type, shots = 100):
         run.isInit = True
 
     # Set the backend server.
-    backend = qiskit.providers.ibmq.least_busy(qiskit.IBMQ.backends(simulator=False))
+    provider = IBMQ.get_provider()
+    backend = provider.get_backend('ibmq_qasm_simulator')
+    #backend = qiskit.providers.ibmq.least_busy(qiskit.IBMQ.backends(simulator=False))
 
     # Execute the program on the quantum machine.
     print("Running on", backend.name())
@@ -286,7 +288,7 @@ def miniGame(altitude):
 run.isInit = False # Indicate that we need to initialize the IBM Q API in the run() method.
 isGameOver = False # Indicates when the game is complete.
 altitude = 0 # Current altitude of player. Once goal is reached, the game ends.
-errorBuffer = (75 if device == 'real' else 0) # Amount to add to measurements on real quantum computer to account for error rate, otherwise player can never reach goal due to measurement error even at 100% invert of qubit.
+errorBuffer = (0 if device == 'real' else 0) # Amount to add to measurements on real quantum computer to account for error rate, otherwise player can never reach goal due to measurement error even at 100% invert of qubit.
 goal = 1024 - errorBuffer # Max altitude for the player to reach to end the game.
 shots = goal + errorBuffer # Number of measurements on the quantum machine; when shots == goal, the player reached the goal; we include a buffer on physical quantum computers to account for natural error.
 turns = 0 # Total count of turns in the game.
