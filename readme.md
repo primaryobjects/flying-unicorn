@@ -15,6 +15,21 @@ For comparison, a classical (non-quantum) version of the game is also available 
 
 [An Introduction to Quantum Computing](http://www.primaryobjects.com/2019/01/07/an-introduction-to-quantum-computing/)
 
+## Usage
+
+The classic version of the game may be ran as follows.
+
+```bash
+python unicorn-classic.py
+```
+
+The quantum version of the game may be ran as shown below. You'll need to edit `config.ini` to set your IBMQ `key` in order to call their API. You can obtain a key from your [IBMQ Account](https://quantumexperience.ng.bluemix.net/qx/account). See also the qiskit documentation for [Getting Started](https://github.com/Qiskit/qiskit-api-py#getting-started).
+
+```bash
+export PYTHONWARNINGS="ignore:Unverified HTTPS request"
+python3.6 unicorn.py
+```
+
 ## Gameplay
 
 ```text
