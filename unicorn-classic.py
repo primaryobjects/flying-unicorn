@@ -109,6 +109,7 @@ def miniGame(altitude):
 
     # Memory for the computer to select an answer from.
     memory = jewels.copy()
+    secret_jewel = memory[secret - 1]
 
     while not isGuessGameOver:
       # Let the player make a guess.
@@ -131,22 +132,24 @@ def miniGame(altitude):
       else:
         print("You guessed wrong.")
         # Remove this jewel from the list of available choices for the computer player.
-        memory.pop(index - 1)
+        remove_index = memory.index(command) if command in memory else -1
+        if remove_index > -1:
+            memory.pop(remove_index)
 
       # Let the computer make a guess.
       if not isGuessGameOver:
         # The computer's guess is a number from the remaining choices.
-        computerResult = random.randint(1, len(memory))
+        computer_result = random.randint(1, len(memory))
 
-        print("The mischievous cloud guesses " + getJewel(computerResult) + '.')
-        if computerResult == secret:
+        print("The mischievous cloud guesses " + memory[computer_result - 1] + '.')
+        if memory[computer_result - 1] == secret_jewel:
           print("Haha, I win, says the mischievous cloud!\nDon't say I didn't warn you!")
           print("Altitude - 100")
           bonus = -100
           isGuessGameOver = True
         else:
           # Remove this jewel from the list of available choices for the computer player.
-          memory.pop(computerResult - 1)
+          memory.pop(computer_result - 1)
 
   # Return the new altitude + bonus (or penalty).
   return (altitude + bonus) if (altitude + bonus) >= 0 else 0
